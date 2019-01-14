@@ -1,5 +1,7 @@
 # jekyll-theme-8bit
 
+[![Build Status](https://travis-ci.org/julianolf/jekyll-theme-8bit.svg?branch=master)](https://travis-ci.org/julianolf/jekyll-theme-8bit)
+
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
