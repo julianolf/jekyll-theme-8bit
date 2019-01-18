@@ -27,24 +27,26 @@ def validate(file)
   exit 1
 end
 
+# Add Rubocop pre-defined tasks.
+RuboCop::RakeTask.new
+
 desc 'Build 8bit theme Gem'
 task :build do
   sh 'gem', 'build', 'jekyll-theme-8bit.gemspec'
 end
 
-desc 'Build the site using 8bit theme'
+desc 'Build a site using 8bit theme'
 task :build_site do
   sh 'jekyll', 'build'
 end
 
-desc 'Validate HTML according to W3C standards'
-task :validate_html do
+desc 'Validate HTML and CSS'
+task validate: %i[build_site] do
+  # Validate according to W3C standards
   validate(File.join(BUILD_DIR, 'index.html'))
   validate(File.join(BUILD_DIR, 'assets', 'css', 'style.css'))
-end
 
-desc 'Test suite for HTML output'
-task :test_html do
+  # Validate the integrity of the HTML
   options = {
     assume_extension: true,
     check_html: true,
@@ -53,8 +55,8 @@ task :test_html do
   HTMLProofer.check_directory(BUILD_DIR, options).run
 end
 
-# Add Rubocop pre-defined tasks.
-RuboCop::RakeTask.new
+desc 'Test suite for 8bit theme'
+task test: %i[validate rubocop]
 
 desc 'Build and validate 8bit theme'
-task default: %i[build_site validate_html test_html rubocop build]
+task default: %i[test build]
