@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'html-proofer'
 require 'w3c_validators'
 require 'rubocop/rake_task'
 
@@ -44,8 +45,13 @@ end
 
 desc 'Test suite for HTML output'
 task :test_html do
-  sh 'htmlproofer', BUILD_DIR, '--check-html',
-     '--check-sri', '--disable-external'
+  options = {
+    assume_extension: true,
+    check_html: true,
+    check_sri: true,
+    disable_external: true
+  }
+  HTMLProofer.check_directory(BUILD_DIR, options).run
 end
 
 # Add Rubocop pre-defined tasks.
