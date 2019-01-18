@@ -48,7 +48,6 @@ task :test_html do
   options = {
     assume_extension: true,
     check_html: true,
-    check_sri: true,
     disable_external: true
   }
   HTMLProofer.check_directory(BUILD_DIR, options).run
