@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
+require 'rake/clean'
 require 'html-proofer'
 require 'w3c_validators'
 require 'rubocop/rake_task'
 
 BUILD_DIR = '_site'
+
+CLEAN.include(BUILD_DIR, '.sass-cache')
+CLOBBER.include('jekyll-theme-8bit-*.gem')
 
 def validator(file)
   extension = File.extname(file)
@@ -31,12 +35,12 @@ end
 RuboCop::RakeTask.new
 
 desc 'Build 8bit theme Gem'
-task :build do
+task build: %i[clobber] do
   sh 'gem', 'build', 'jekyll-theme-8bit.gemspec'
 end
 
 desc 'Build a site using 8bit theme'
-task :build_site do
+task build_site: %i[clean] do
   sh 'jekyll', 'build'
 end
 
