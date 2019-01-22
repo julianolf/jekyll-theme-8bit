@@ -231,6 +231,12 @@ footer {
   margin: 0 auto;
 }
 
+@media print, screen and (max-width: 1024px) {
+  section {
+    margin-top: 85px;
+  }
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
@@ -238,19 +244,14 @@ footer {
     margin: 0;
   }
 
-  header, section, footer {
-    float: none;
-    position: static;
-    width: auto;
-  }
-
-  header {
-    padding-right: 320px;
+  header, footer {
+    width: 260px;
+    margin-left: 5px;
   }
 
   section {
-    padding: 20px 0;
-    margin: 0 0 20px;
+    width: 63%;
+    padding: 15px;
   }
 
   header a small {
@@ -269,16 +270,34 @@ footer {
     word-wrap: break-word;
   }
 
-  header {
-    padding: 0;
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto;
   }
 
-  header ul, header p.view {
+  header, section, footer {
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  header p.view {
     position: static;
+  }
+
+  section {
+    padding: 0 15px;
   }
 
   pre, code {
     word-wrap: normal;
+  }
+
+  .github-link {
+    position: static;
+    margin: 30px auto 0;
+    padding: 0 8px;
+    justify-content: flex-end;
   }
 }
 
@@ -287,11 +306,8 @@ footer {
     padding: 0 15px 15px;
   }
 
-  .github-link {
-    position: static;
-    margin: 30px auto 0;
-    padding: 0 8px;
-    justify-content: flex-end;
+  header, section, footer {
+    padding: 0;
   }
 }
 
