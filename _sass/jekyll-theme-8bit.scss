@@ -205,6 +205,11 @@ footer {
   box-shadow: inset -4px -4px #01b801;
 }
 
+.nes-list.is-disc li::before,
+.nes-list.is-circle li::before {
+  top: 2px;
+}
+
 .footer {
   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
   font-weight: 400;

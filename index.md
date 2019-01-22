@@ -38,12 +38,14 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 #### Header 4
 
+{:.nes-list .is-disc}
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 
 ##### Header 5
 
+{:.nes-list .is-circle}
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
@@ -52,6 +54,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 This is how a table should look like.
 
+{:.nes-table .is-bordered}
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
 | ok           | good swedish fish | nice  |
@@ -65,6 +68,7 @@ There's a horizontal rule below this.
 
 ### Here is a nested list:
 
+{:.nes-list .is-disc}
 - level 1 item
   - level 2 item
   - level 2 item
