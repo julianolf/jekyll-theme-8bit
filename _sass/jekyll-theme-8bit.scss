@@ -113,6 +113,7 @@ header {
 
 section {
   width: 500px;
+  min-height: 810px;
   float: right;
   padding: 25px 0 50px;
   background-color: #fff;
@@ -286,6 +287,7 @@ footer {
   }
 
   section {
+    min-height: 0;
     padding: 0 15px;
   }
 
