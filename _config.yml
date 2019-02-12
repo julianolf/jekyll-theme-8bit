@@ -3,6 +3,14 @@ description: A Jekyll theme inspired by classic 8bit games.
 theme: jekyll-theme-8bit
 logo: nes-kirby
 show_downloads: true
+permalink: /:year/:month/:title.html
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: '/page/:num/'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 social:
   twitter: https://twitter.com/username
   facebook: https://facebook.com/username
