@@ -11,7 +11,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 1.3;
   margin: 0 0 20px;
 }
 
@@ -24,24 +23,18 @@ p, ul, ol, table, pre, dl {
 }
 
 a {
-  color: #777;
+  color: #58c7ff;
 }
 
 a:hover, a:focus {
-  color: #888;
+  color: #3fbfff;
   text-decoration: none;
 }
 
 a small {
   font-size: 11px;
-  color: #777;
   margin-top: -0.3em;
   display: block;
-}
-
-a:hover small {
-  color: #888;
-  text-decoration: none;
 }
 
 blockquote {
@@ -101,9 +94,9 @@ small {
 
 hr {
   border: 0;
-  background: #e5e5e5;
-  height: 1px;
-  margin: 0 0 20px;
+  background: #000;
+  height: 4px;
+  margin: 20px 0;
 }
 
 header {
@@ -230,6 +223,87 @@ footer {
 .wrapper {
   width: 860px;
   margin: 0 auto;
+}
+
+ul.pagination {
+  list-style-type: none;
+  margin: 0 0 30px;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.pagination li {
+  display: inline-block;
+  float: left;
+}
+
+.page_number {
+  font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: smaller;
+  padding: 0 8px;
+}
+
+.previous,
+.next {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.previous::before,
+.next::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  color: #212529;
+  position: absolute;
+}
+
+a span.previous::before,
+a span.next::before {
+  color: #58c7ff;
+}
+a:hover span.previous::before,
+a:hover span.next::before {
+  color: #3fbfff;
+}
+
+.previous::before {
+  box-shadow:
+    2px 8px,
+    4px 6px,4px 8px,4px 10px,
+    6px 4px,6px 6px,6px 8px,6px 10px,6px 12px,
+    8px 4px,8px 6px,8px 8px,8px 10px,8px 12px,
+    10px 2px,10px 4px,10px 6px,10px 8px,10px 10px,10px 12px, 10px 14px,
+    12px 2px,12px 4px,12px 6px,12px 8px,12px 10px,12px 12px, 12px 14px,
+    14px 0px,14px 2px,14px 4px,14px 6px,14px 8px,14px 10px,14px 12px, 14px 14px, 14px 16px,
+    16px 0px,16px 2px,16px 4px,16px 6px,16px 8px,16px 10px,16px 12px, 16px 14px, 16px 16px;
+}
+
+.next::before {
+  box-shadow:
+    2px 0px, 4px 0px,
+    2px 2px, 4px 2px, 6px 2px, 8px 2px,
+    2px 4px, 4px 4px, 6px 4px, 8px 4px, 10px 4px, 12px 4px,
+    2px 6px, 4px 6px, 6px 6px, 8px 6px, 10px 6px, 12px 6px, 14px 6px,
+    2px 8px, 4px 8px, 6px 8px, 8px 8px, 10px 8px, 12px 8px, 14px 8px, 16px 8px,
+    2px 10px, 4px 10px, 6px 10px, 8px 10px, 10px 10px, 12px 10px, 14px 10px,
+    2px 12px, 4px 12px, 6px 12px, 8px 12px, 10px 12px, 12px 12px,
+    2px 14px, 4px 14px, 6px 14px, 8px 14px,
+    2px 16px, 4px 16px;
+}
+
+.post-info {
+  display: block;
+  margin-bottom: 20px;
+  color: #777;
+}
+.post-info b {
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  background-color: #eee;
+  padding: 1px 3px;
 }
 
 @media print, screen and (max-width: 1024px) {
