@@ -1,0 +1,21 @@
+<header>
+  <div class="nes-container is-rounded blue-border header">
+    {% if site.logo %}
+      {% if site.logo contains 'nes-' %}
+      <i class="{{ site.logo }}"></i>
+      {% else %}
+      <img src="{{site.logo | relative_url}}" alt="Logo" />
+      {% endif %}
+    {% endif %}
+    <h1>
+      <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+    </h1>
+    <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
+    {% if site.social %}
+      {% include social.html  %}
+    {% endif %}
+  </div>
+  {% if site.show_downloads %}
+    {% include downloads.html %}
+  {% endif %}
+</header>
