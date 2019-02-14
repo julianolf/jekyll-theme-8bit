@@ -4,6 +4,7 @@ require 'rake/clean'
 require 'html-proofer'
 require 'w3c_validators'
 require 'rubocop/rake_task'
+require 'rubygems'
 
 BUILD_DIR = '_site'
 
@@ -64,3 +65,32 @@ task test: %i[validate rubocop]
 
 desc 'Build and validate 8bit theme'
 task default: %i[test build]
+
+desc 'Tag and publish the new gem'
+task release: %i[build] do
+  # Make sure we're on the master branch
+  sh 'git rev-parse --abbrev-ref HEAD | grep -q master' do |ok, out|
+    unless ok
+      puts 'Only release from the master branch.'
+      exit out.exitstatus
+    end
+  end
+
+  # Figure out what version we're releasing
+  version = Gem::Specification.load('jekyll-theme-8bit.gemspec').version
+
+  # Make sure we haven't released this version yeat
+  sh 'git fetch -t origin'
+  sh "git tag -l | grep -q '#{version}'" do |ok, _|
+    if ok
+      puts "Whoops, there's already a #{version} tag."
+      exit 1
+    end
+  end
+
+  # Tag and publish it
+  sh "gem push jekyll-theme-8bit-#{version}.gem"
+  sh "git tag #{version}"
+  sh 'git push origin master'
+  sh "git push origin #{version}"
+end
