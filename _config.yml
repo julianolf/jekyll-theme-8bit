@@ -4,6 +4,7 @@ theme: jekyll-theme-8bit
 logo: nes-kirby
 show_downloads: true
 plugins:
+ - jekyll-paginate-v2
  - jekyll-seo-tag
 permalink: /:year/:month/:title.html
 pagination:
