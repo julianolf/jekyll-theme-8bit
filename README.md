@@ -1,6 +1,6 @@
 # jekyll-theme-8bit
 
-[![Build Status](https://travis-ci.org/julianolf/jekyll-theme-8bit.svg?branch=master)](https://travis-ci.org/julianolf/jekyll-theme-8bit)
+[![Build Status](https://travis-ci.org/julianolf/jekyll-theme-8bit.svg?branch=master)](https://travis-ci.org/julianolf/jekyll-theme-8bit) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-8bit.svg)](https://badge.fury.io/rb/jekyll-theme-8bit)
 
 A Jekyll theme inspired by classic 8bit games.
 
