@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.platform = Gem::Platform::RUBY
   spec.add_runtime_dependency 'jekyll', '~> 3.8.5'
-  spec.add_runtime_dependency 'jekyll-paginate-v2', '~> 2.1'
+  spec.add_runtime_dependency 'jekyll-paginate', '~> 1.1.0'
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.5'
   spec.add_development_dependency 'bundler', '~> 2.0.1'
   spec.add_development_dependency 'html-proofer', '~> 3.10'
