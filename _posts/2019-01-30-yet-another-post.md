@@ -9,11 +9,11 @@ In this post you are going to take a look on how images, nested lists, and defin
 
 ### Small image
 
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![Super Mario Bros](https://imgur.com/2hc7x4y.jpg)
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![The Legend of Zelda](https://imgur.com/2ffOaOl.jpg)
 
 ### Here is a nested list:
 
