@@ -4,6 +4,10 @@
 
 A Jekyll theme inspired by classic 8bit games.
 
+## Preview
+
+You can see how the theme looks like [here](http://julianofernandes.com.br/jekyll-theme-8bit/).
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
