@@ -118,25 +118,20 @@ footer {
   bottom: 50px;
 }
 
-.nes-container.blue-border::after {
-  box-shadow:
-    0 -4px #3fbfff, 0 -8px #1a80b2, 4px 0 #1a80b2, 4px -4px #1a80b2,
-    8px 0 #3fbfff, 0 4px #1a80b2, 0 8px #3fbfff, -4px 0 #3fbfff,
-    -4px 4px #1a80b2, -8px 0 #1a80b2, -4px -4px #1a80b2, 4px 4px #3fbfff;
+.nes-container.is-rounded {
+  margin-top: 8px;
 }
 
-.nes-container.green-border::after {
-  box-shadow:
-    0 -4px #01b801, 0 -8px #007800, 4px 0 #007800, 4px -4px #007800,
-    8px 0 #01b801, 0 4px #007800, 0 8px #01b801, -4px 0 #01b801,
-    -4px 4px #007800, -8px 0 #007800, -4px -4px #007800, 4px 4px #01b801;
+.nes-container.blue-border {
+  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="rgb(26,128,178)" /></svg>');
 }
 
-.nes-container.brown-border::after {
-  box-shadow:
-    0 -4px #ffa347, 0 -8px #8b1600, 4px 0 #8b1600, 4px -4px #8b1600,
-    8px 0 #ffa347, 0 4px #8b1600, 0 8px #ffa347, -4px 0 #ffa347,
-    -4px 4px #8b1600, -8px 0 #8b1600, -4px -4px #8b1600, 4px 4px #ffa347;
+.nes-container.green-border {
+  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="rgb(0,120,0)" /></svg>');
+}
+
+.nes-container.brown-border {
+  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="rgb(139,22,0)" /></svg>');
 }
 
 .nes-container.header {
@@ -185,18 +180,21 @@ footer {
 .nes-container.downloads {
   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
   background-color: #5adb57;
-  margin-top: 26px;
+  margin-top: 12px;
 }
 
 .nes-btn.is-file {
   color: #fafafa;
   background-color: #01b801;
+}
+.nes-btn.is-file::after {
   box-shadow: inset -4px -4px #007800;
 }
-
 .nes-btn.is-file:hover {
   background-color: #5adb57;
-  box-shadow: inset -4px -4px #01b801;
+}
+.nes-btn.is-file:hover::after {
+  box-shadow: inset -6px -6px #01b801;
 }
 
 .nes-list.is-disc li::before,
