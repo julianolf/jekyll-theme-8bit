@@ -80,7 +80,42 @@ This directory can include sub-directories to manage assets of similar type (`im
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Customization
+
+For details on how to customize the layout, style and configurations head to [Jekyll](https://jekyllrb.com/docs/themes/) documentation, it has detailed information about everything you might need.
+
+So far 8bit theme specific customizations are only available through entries in `_config.yml`.
+
+#### Custom logo
+
+Set **logo** entry in `_config.yml`. It accepts an image path like `assets/img/logo.png` or one of the available Nintendo characters provided by [NES.css](https://nostalgic-css.github.io/NES.css/): `nes-mario`, `nes-ash`, `nes-pokeball`, `nes-bulbasaur`, `nes-charmander`, `nes-squirtle`, `nes-kirby`.
+
+**PS**.: Nintendo owns the copyright of these characters. Please comply with the Nintendo guidelines and laws of the applicable jurisdiction.
+
+#### Show download buttons
+
+If you’re publishing on GitHub Pages for a project you can enable the download buttons by just setting `show_downloads: true` in `_config.yml`.
+
+#### Social networks
+
+You can show links for accounts you have on some of the most popular social networks. See the example below with the complete list of available networks.
+
+```yaml
+# file: _config.yml
+
+social:
+  twitter: https://twitter.com/username
+  facebook: https://facebook.com/username
+  github: https://github.com/username
+  youtube: https://youtube.com/channel/ID
+  google: https://plus.google.com/username
+  medium: https://medium.com/@username
+  twitch: https://twitch.com/username
+  reddit: https://www.reddit.com/user/username
+  whatsapp: tel:+5541999999999
+  gmail: mailto:username@domain.net
+  linkedin: https://www.linkedin.com/in/username
+```
 
 ## Contributing
 
