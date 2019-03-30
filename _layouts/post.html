@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <small class="post-info">{{ page.date | date: "%B %-d, %Y" }}</small>
@@ -8,4 +9,7 @@ layout: default
 {{ content }}
 {% if page.tags %}
 <small class="post-info">Tags: <b>{{ page.tags | join: "</b> <b>" }}</b></small>
+{% endif %}
+{% if site.disqus.shortname %}
+  {% include comments.html %}
 {% endif %}

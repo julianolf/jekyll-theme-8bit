@@ -92,7 +92,7 @@ Set **logo** entry in `_config.yml`. It accepts an image path like `assets/img/l
 
 **PS**.: Nintendo owns the copyright of these characters. Please comply with the Nintendo guidelines and laws of the applicable jurisdiction.
 
-#### Show download buttons
+#### Showing download buttons
 
 If you’re publishing on GitHub Pages for a project you can enable the download buttons by just setting `show_downloads: true` in `_config.yml`.
 
@@ -116,6 +116,21 @@ social:
   gmail: mailto:username@domain.net
   linkedin: https://www.linkedin.com/in/username
 ```
+
+#### Comments
+
+Comments feature is provided by an integration between Jekyll and Disqus, so if you want to have a comments section below each post you will need a Disqus account.
+
+If you already have an account all you need to do is add the following entries to your `_config.yml`:
+
+```yaml
+disqus:
+  shortname: your-sites-shortname
+```
+
+In case you still don't have an account take a look at [Disqus](https://disqus.com)' page for details on how to create and configure an account.
+
+Comments are enabled by default but if you want to disable them for one particular post you can by just adding `comments: false` to the post's YAML Front Matter.
 
 ## Contributing
 

@@ -19,3 +19,5 @@ social:
   whatsapp: tel:+5541999999999
   gmail: mailto:username@domain.net
   linkedin: https://www.linkedin.com/in/username
+disqus:
+  shortname: jekyll-theme-8bit
