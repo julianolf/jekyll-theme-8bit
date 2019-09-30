@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.5'
   spec.add_development_dependency 'bundler', '~> 2.0.1'
   spec.add_development_dependency 'html-proofer', '~> 3.10'
-  spec.add_development_dependency 'rake', '~> 12.3.2'
+  spec.add_development_dependency 'rake', '~> 13.0.0'
   spec.add_development_dependency 'rubocop', '~> 0.62'
   spec.add_development_dependency 'w3c_validators', '~> 1.3.4'
 end
