@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = 'jekyll-theme-8bit'
-  spec.version  = '0.4.0'
+  spec.version  = '0.5.0'
   spec.authors  = ['Juliano Fernandes']
   spec.email    = ['julianofernandes@gmail.com']
   spec.summary  = 'A Jekyll theme inspired by classic 8bit games.'
