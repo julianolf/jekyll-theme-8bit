@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2.2.0'
   spec.add_development_dependency 'html-proofer', '~> 3.10'
   spec.add_development_dependency 'rake', '~> 13.0.0'
-  spec.add_development_dependency 'rubocop', '~> 0.62'
+  spec.add_development_dependency 'rubocop', '~> 1.6'
   spec.add_development_dependency 'w3c_validators', '~> 1.3.4'
 end
