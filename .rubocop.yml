@@ -3,6 +3,7 @@ inherit_mode:
     - Exclude
 
 AllCops:
+  NewCops: enable
   Exclude:
     - _site/**/*
   TargetRubyVersion: 2.6
