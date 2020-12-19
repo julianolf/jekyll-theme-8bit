@@ -13,9 +13,10 @@ CLOBBER.include('jekyll-theme-8bit-*.gem')
 
 def validator(file)
   extension = File.extname(file)
-  if extension == '.html'
+  case extension
+  when '.html'
     W3CValidators::NuValidator.new
-  elsif extension == '.css'
+  when '.css'
     W3CValidators::CSSValidator.new
   end
 end
