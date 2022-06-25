@@ -3,8 +3,7 @@ updates:
 - package-ecosystem: bundler
   directory: "/"
   schedule:
-    interval: weekly
-    time: "08:00"
+    interval: monthly
   open-pull-requests-limit: 10
   assignees:
   - julianolf
