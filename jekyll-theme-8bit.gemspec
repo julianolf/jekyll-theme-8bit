@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'kramdown-parser-gfm', '~> 1.1.0'
   spec.add_development_dependency 'webrick', '~> 1.8.1'
   spec.add_development_dependency 'html-proofer', '~> 5.0.7'
-  spec.add_development_dependency 'rake', '~> 13.0.6'
+  spec.add_development_dependency 'rake', '~> 13.1.0'
   spec.add_development_dependency 'rubocop', '~> 1.55.1'
   spec.add_development_dependency 'w3c_validators', '~> 1.3.7'
 end
