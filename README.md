@@ -21,18 +21,23 @@ And add this line to your Jekyll site's `_config.yml`:
 ```yaml
 theme: jekyll-theme-8bit
 ```
+
 Or this, if you’re publishing your Jekyll site on GitHub Pages:
+
 ```yaml
 remote_theme: julianolf/jekyll-theme-8bit
 ```
 
 And then execute:
 
-    $ bundle
-
+```bash
+bundle
+```
 Or install it yourself as:
 
-    $ gem install jekyll-theme-8bit
+```bash
+gem install jekyll-theme-8bit
+```
 
 ## Customization
 
