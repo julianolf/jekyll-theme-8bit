@@ -6,7 +6,7 @@ A Jekyll theme inspired by classic 8bit games.
 
 ## Preview
 
-You can see how the theme looks like [here](http://julianofernandes.com.br/jekyll-theme-8bit/).
+You can see how the theme looks like [here](https://julianolf.github.io/jekyll-theme-8bit/).
 
 ## Installation
 
