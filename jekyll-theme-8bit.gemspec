@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-paginate', '~> 1.1.0'
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.8.0'
   spec.add_development_dependency 'kramdown-parser-gfm', '~> 1.1.0'
-  spec.add_development_dependency 'webrick', '~> 1.8.1'
+  spec.add_development_dependency 'webrick', '~> 1.9.0'
   spec.add_development_dependency 'html-proofer', '~> 5.0.7'
   spec.add_development_dependency 'rake', '~> 13.2.1'
   spec.add_development_dependency 'rubocop', '~> 1.55.1'
