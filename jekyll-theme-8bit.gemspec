@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.6'
   spec.add_runtime_dependency 'jekyll', '>= 3.8.5', '< 4.5.0'
   spec.add_runtime_dependency 'jekyll-paginate', '~> 1.1.0'
-  spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.8.0'
+  spec.add_runtime_dependency 'jekyll-seo-tag', '>= 2.8', '< 2.10'
   spec.add_development_dependency 'kramdown-parser-gfm', '~> 1.1.0'
   spec.add_development_dependency 'webrick', '~> 1.9.0'
   spec.add_development_dependency 'html-proofer', '~> 5.2.0'
